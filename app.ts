@@ -30,3 +30,14 @@ console.log(a,b,cbf(44))
 hellow(55,55,(c:number)=>{
   console.log(55+6)
 })
+//type assertion
+//it is used to tell ts the type of a variable
+// const btn =<HTMLElement>document.getElementById("hey")
+// const btn1 =document.getElementById("hey") as HTMLElement
+// const bt2n =document.getElementById("hey")!
+// sometimes we have specifically mention the particular type like in case of image tage we have to write htmlimagetag,
+//with query.selector we can use not null
+
+//type utility
+
+
