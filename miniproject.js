@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // const color:string[] =['green','black','pink','aqua','brown']
 // const body =document.querySelector('body')!;
 // const btn=document.getElementById('hey') as HTMLButtonElement;
@@ -9,11 +11,11 @@
 //   index=0;
 // }
 // })
-var color = ['green', 'black', 'pink', 'aqua', 'brown'];
-var body = document.querySelector('body');
-var btn = document.getElementById('hey');
-var index = 0;
-btn.addEventListener('click', function () {
+const color = ['green', 'black', 'pink', 'aqua', 'brown'];
+const body = document.querySelector('body');
+const btn = document.getElementById('hey');
+let index = 0;
+btn.addEventListener('click', () => {
     body.style.backgroundColor = color[index]; // FIXED: removed quotes
     index++;
     if (index === color.length) {
@@ -31,12 +33,12 @@ btn.addEventListener('click', function () {
 // btn2.addEventListener('click' ()=>{
 //   num--;
 // })
-var btn1 = document.getElementById('inc');
-var btn2 = document.getElementById('dec');
-var num = 0;
-var head = document.querySelector('h1');
+const btn1 = document.getElementById('inc');
+const btn2 = document.getElementById('dec');
+let num = 0;
+const head = document.querySelector('h1');
 head.innerText = num.toString();
-btn1.addEventListener('click', function () {
+btn1.addEventListener('click', () => {
     num++;
     if (num === 5) {
         head.style.backgroundColor = 'red';
@@ -46,7 +48,8 @@ btn1.addEventListener('click', function () {
     }
     head.innerText = num.toString();
 });
-btn2.addEventListener('click', function () {
+btn2.addEventListener('click', () => {
     num--;
     head.innerText = num.toString();
 });
+//# sourceMappingURL=miniproject.js.map
